@@ -1,0 +1,59 @@
+<!------------------------------Aleksandar Petkov---------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigPlanetarium – Mars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>The Planet Mars</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planets.html" aria-current="page">Planets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <!--Uses proper semantic structure for an article meant to be read on its own-->
+      <h2>About Mars</h2>
+      <p>Mars, the fourth planet from the Sun, is known as the Red Planet due to its rusty surface colour. Scientists believe it once had water and could have supported life.</p>
+      <img src="mars.png" alt="A red, dusty view of the Martian surface.">
+    </article>
+
+    <section>
+      <h2>Quick Facts</h2>
+      <!--List makes logical sense for screen-readers-->
+      <ul>
+        <li>Orbit time: 687 Earth days</li>
+        <li>Moons: Phobos and Deimos</li>
+        <li>Average temperature: -63°C</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Watch: Mission to Mars</h2>
+      <!--Accessible embedded video player with captions-->
+      <video controls width="100%" aria-label="Video about space missions to Mars">
+        <source src="media/mars_video.mp4" type="video/mp4">
+        <!--Adding captions allows deaf users to access video content-->
+       <!-- <track label="English captions" kind="captions" srclang="en" src="media/mars_captions.vtt" default>-->
+        <!--I desable temporary captions because the video file not have sound-->
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Return to home</a></p>
+  </footer>
+</body>
+</html>

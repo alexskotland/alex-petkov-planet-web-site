@@ -1,0 +1,54 @@
+<!---------------------------Aleksandar Petkov-------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><!--Uses UTF-8 character encoding-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Makes site responsive -->
+  <title>BigPlanetarium – Explore the Milky Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Provides a skip link to allow keyboard/screen reader users to skip straight to main content-->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header>
+    <h1>BigPlanetarium</h1>
+    <!--Contains semantic navigation element (<nav>) with aria-label for screen readers to identify the navigation region!-->
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="planets.html">Planets</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <!--Added aria-current="page" to identify which page is currently being viewed to assistive technology-->
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <h2>Welcome to the Milky Way</h2>
+      <p>Discover the wonders of our galaxy through engaging stories, images, and interactive learning.</p>
+      <!--Uses an accessible interactive element updated with JavaScript-->
+      <button id="funFactBtn" aria-controls="fact" aria-expanded="false">Reveal a space fact</button>
+      <!--Provides hidden text to show/hide with JavaScript.
+       Element was hidden with hidden attribute to ensure screen readers skip over the element until it is made visible with JavaScript.-->
+      <p id="fact" hidden></p>
+    </section>
+
+    <figure>
+      <img src="milkyway.png" alt="The Milky Way galaxy filled with stars.">
+      <figcaption>The Milky Way as seen from Earth.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Explore the Planets</h2>
+      <p>Visit our <a href="planets.html">Planet Pages</a> to learn about Mars and other worlds that orbit our Sun.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BigPlanetarium, Bristol. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
